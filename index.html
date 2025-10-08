@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dumpa Chaithanya | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
+    .typing::after { content: "|"; animation: blink 1s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
+      <h1 class="font-bold text-xl">Dumpa Chaithanya
+
+      </h1>
+      <ul class="flex gap-6 text-gray-700 font-medium">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-blue-100 to-indigo-50 px-4">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 fade-in">Hi, I'm <span class="text-blue-600">Dumpa Chaithanya</span></h1>
+    <p class="text-xl md:text-2xl text-gray-700 mb-6 typing" id="typing"></p>
+    <div class="flex gap-4">
+      <a href="mailto:dumpachaithanya2002@gmail.com" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">Mail Me</a>
+      <a href="https://github.com/chaituchaithanya" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">GitHub</a>
+      <a href="https://www.linkedin.com/in/dumpa-chaithanya-47b7542b1/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">LinkedIn</a>
+      <a href="tel:+917981346217" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">Contact Me</a>
+    </div>
+    <div class="mt-8 flex gap-4">
+      <a href="Dumpa_Chaithanya_CV (2).pdf"download class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">Download CV</a>
+      <a href="mailto:dumpachaithanya2002@gmail.com" class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-900">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-20 px-6 grid md:grid-cols-3 gap-12 items-center">
+    <img src="profile.png" alt="Profile" class="rounded-2xl shadow-lg">
+    <div>
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        I'm a B.Tech graduate in Artificial Intelligence & Data Science, passionate about building scalable web apps and intelligent systems.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Skilled in Python, React, TailwindCSS, and databases. Worked on projects like an Digital Electronic Secure Code Lock System Using RFID.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      <div class="p-6 bg-white shadow rounded-lg hover:scale-105 transition">HTML</div>
+      <div class="p-6 bg-white shadow rounded-lg hover:scale-105 transition">React</div>
+      <div class="p-6 bg-white shadow rounded-lg hover:scale-105 transition">JavaScript</div>
+      <div class="p-6 bg-white shadow rounded-lg hover:scale-105 transition">TailwindCSS</div>
+      <div class="p-6 bg-white shadow rounded-lg hover:scale-105 transition">Python</div>
+      <div class="p-6 bg-white shadow rounded-lg hover:scale-105 transition">PostgreSQL</div>
+      <div class="p-6 bg-white shadow rounded-lg hover:scale-105 transition">Git</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold mb-3">Digital Electronic Security Code Lock System Using RFID</h3>
+        <p class="text-gray-700 mb-4">By Catching Radio Frequencies The Doors Will Be Unlocked Automatically.</p>
+        <a href="#" class="text-blue-600 font-medium hover:underline">View Project →</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold mb-3">Full Stack Web App</h3>
+        <p class="text-gray-700 mb-4">Developed a full stack web application with Python backend and React frontend.</p>
+        <a href="#" class="text-blue-600 font-medium hover:underline">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-blue-50 py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+    <p class="text-gray-700 mb-6">I'm open to opportunities and collaborations. Reach out!</p>
+    <form class="max-w-lg mx-auto grid gap-4">
+      <input type="text" placeholder="Your Name" class="p-3 rounded-lg border" required>
+      <input type="email" placeholder="Your Email" class="p-3 rounded-lg border" required>
+      <textarea placeholder="Your Message" rows="4" class="p-3 rounded-lg border" required></textarea>
+      <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 text-sm">
+    © <script>document.write(new Date().getFullYear())</script> Vukoti Praharsha. All rights reserved.
+  </footer>
+
+  <script>
+    // Typing animation
+    const texts = ["Full Stack Developer", "Python Developer"];
+    let count = 0, index = 0, currentText = "", letter = "";
+    (function type(){
+      if(count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+      document.getElementById('typing').textContent = letter;
+      if(letter.length === currentText.length){ count++; index = 0; setTimeout(type, 1500); }
+      else { setTimeout(type, 100); }
+    }());
+  </script>
+
+</body>
+</html>
